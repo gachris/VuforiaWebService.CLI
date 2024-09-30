@@ -17,7 +17,7 @@ The VuforiaWebService.CLI is a command-line interface tool for interacting with 
 
 ## Prerequisites
 
-- .NET SDK (version 8.0 or higher)
+- .NET SDK (version 6.0 or higher)
 - Vuforia Access Key and Secret Key
 
 ## Installation
