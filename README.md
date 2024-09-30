@@ -38,7 +38,7 @@ The VuforiaWebService.CLI is a command-line interface tool for interacting with 
 3. Publish the application:
 
    ```bash
-   dotnet publish -c Release -o ../../.publish
+   dotnet publish --configuration Release --output ./publish --self-contained true --runtime win-x64 -p:PublishSingleFile=true -p:PublishTrimmed=true -p:DebugType=None
    ```
 
 Alternatively, you can download the pre-built executable from the [GitHub Releases](https://github.com/gachris/VuforiaWebService.CLI/releases) page.
