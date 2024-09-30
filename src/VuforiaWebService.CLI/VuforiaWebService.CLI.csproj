@@ -6,6 +6,28 @@
 		<AssemblyName>vuforia</AssemblyName>
 	</PropertyGroup>
 
+	<PropertyGroup Label="Package Configuration">
+		<Description>
+			The Vuforia Web Services (VWS) CLI is a command-line interface that enables developers to manage targets in their content management system. Key functionalities include:
+			- Listing all targets in the database
+			- Retrieving details for a specific target
+			- Inserting new targets
+			- Updating existing targets
+			- Deleting targets
+			- Checking for similar targets
+			- Generating summary reports
+			- Getting a summary of the database
+		</Description>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
 	<ItemGroup>
 		<PackageReference Include="System.CommandLine" />
 		<PackageReference Include="VuforiaWebService.Api.Target" />

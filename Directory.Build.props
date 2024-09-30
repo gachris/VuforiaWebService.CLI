@@ -9,6 +9,21 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
+	<PropertyGroup Label="Package Configuration" Condition="'$(Configuration)' == 'Release'">
+		<Version>$(AssemblyVersion)</Version>
+		<Authors>gachris</Authors>
+		<RepositoryType>git</RepositoryType>
+		<Copyright>Copyright © 2024.</Copyright>
+		<PackageId>$(MSBuildProjectName)</PackageId>
+		<PackageTags>vuforia, web service, unity</PackageTags>
+		<Product>$(MSBuildProjectName)</Product>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/gachris/VuforiaWebService.CLI</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/gachris/VuforiaWebService.CLI/tree/master/src/$(MSBuildProjectName)</PackageProjectUrl>
+		<PackageOutputPath>$(MSBuildThisFileDirectory)nupkgs</PackageOutputPath>
+		<NeutralLanguage>en-150</NeutralLanguage>
+	</PropertyGroup>
+
 	<PropertyGroup Label="Sign Assembly">
 		<SignAssembly>true</SignAssembly>
 		<AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)SignAssemblyKey.snk</AssemblyOriginatorKeyFile>
